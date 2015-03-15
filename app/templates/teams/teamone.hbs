@@ -1,7 +1,7 @@
-<div class="ui input center-item">
+<div class="ui input light-fade center-item">
   {{input value=newTeamOnePlayers on="keyup" placeholder="Pick Your First Team..."}}
 </div>
-<div class="ui divided list center-item">
+<div class="ui divided list inverted center-item">
   {{#if newTeamOnePlayers}}
     {{#each team in foundTeamsOne}}
     <div class="item">
@@ -17,7 +17,7 @@
 </div>
 
 {{#if teamOneShow}}
-  <div class="ui card center-el">
+  <div class="ui card light-fade center-el">
     <div class="content">
       <div class="header">
         <img class="ui avatar square medium"{{bind-attr src=teamOneShow.imgUrl}}/>
@@ -166,11 +166,11 @@
       <br>
     </div>
   </div>
-  <button class= "ui button teal medium center-item"{{action 'findTeamOnePlayers' teamOneShow}}>See Players</button>
+  <button class= "ui button medium center-item"{{action 'findTeamOnePlayers' teamOneShow}}>See Players</button>
 {{/if}}
 
 {{#if teamOneArray }}
-  <div class="ui card divided list center-el">
+  <div class="ui card divided light-fade list center-el">
     <div class="content">
       {{#each teamOneArray}}
         <div class="item">
@@ -183,7 +183,7 @@
 {{/if}}
 
 {{#if teamOnePlayerStats}}
-  <div class="ui card center-el">
+  <div class="ui card light-fade center-el">
     <div class="content center aligned">
       <h4 class="header">{{teamOnePlayerStats.name}}</h4>
       <div class="ui content divider"></div>

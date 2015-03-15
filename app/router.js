@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('teamtwo');
     this.route('rank');
   });
+  this.route('bracket');
 });
 
 export default Router;

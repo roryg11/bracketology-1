@@ -17,9 +17,9 @@ export default Ember.Controller.extend({
     var filteredTeams = teams.filter(function(team){
       return team.get('name').toLowerCase().indexOf(filterString) >= 0;
     });
-    if(filteredTeams.length == 0){
-      this.set('errorMessageTeamOne', true)
-    }else{this.set('errorMessageTeamOne', false)};
+    if(filteredTeams.length === 0){
+      this.set('errorMessageTeamOne', true);
+    }else{this.set('errorMessageTeamOne', false);}
     return filteredTeams;
   }.property('newTeamOnePlayers', 'model.@each.name'),
   foundTeamsTwo: function() {
@@ -28,9 +28,9 @@ export default Ember.Controller.extend({
     var filteredTeams = teams.filter(function(team){
       return team.get('name').toLowerCase().indexOf(filterString) >= 0;
     });
-    if(filteredTeams.length == 0){
-      this.set('errorMessageTeamTwo', true)
-    }else{this.set('errorMessageTeamTwo', false)};
+    if(filteredTeams.length === 0){
+      this.set('errorMessageTeamTwo', true);
+    }else{this.set('errorMessageTeamTwo', false);}
     return filteredTeams;
   }.property('newTeamTwoPlayers', 'model.@each.name'),
   actions: {
