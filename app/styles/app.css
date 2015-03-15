@@ -1,3 +1,30 @@
+body {
+  background-color: #191924;
+  background-size: cover;
+  min-height: 100%;
+  margin: 0;
+  }
+#bracket {
+  overflow:hidden;
+  background-color: #191924;
+  padding-top: 20px;
+  font-size: 12px;
+  padding: 40px 0;
+  }
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display:block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction:row;
+  flex-direction: row;
+  }
+
 .center-el {
   display: block !important;
   margin-left: auto !important;
@@ -22,30 +49,29 @@
 .menu {
   opacity: 0.8;
 }
-body {
-  background-color: #191924;
-  background-size: cover;
-  min-height: 100%;
-  margin: 0;}
-#bracket {
-  overflow:hidden;
-  background-color: #191924;
-  padding-top: 20px;
-  font-size: 12px;
-  padding: 40px 0;
-  }
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display:block;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction:row;
-  flex-direction: row;}
+.light-fade {
+  opacity: 0.8 !important;
+}
+
+.high-fade {
+  opacity: 0.4 !important;
+}
+
+.bball-red {
+  color: #B13B4B !important;
+}
+
+.bball-navy {
+  color: #191924 !important;
+}
+
+.bball-gray {
+  color: #BBBDC4 !important;
+}
+
+.bball-ltblue {
+  color: #958FD9 !important;
+}
 .split {
   display:block;
   float:left;

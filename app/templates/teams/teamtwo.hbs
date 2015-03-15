@@ -1,11 +1,11 @@
-<div class="ui input center-item">
+<div class="ui input light-fade center-item">
   {{input value=newTeamTwoPlayers on="keyup" placeholder="Pick Your Second Team..."}}
 </div>
-<div class="ui divided list center-item">
+<div class="ui divided list inverted light-fade center-item">
   {{#if newTeamTwoPlayers}}
     {{#each team in foundTeamsTwo}}
       <div class="item">
-        <a {{action "showTeamTwo" team}} >{{team.name}}</a>
+        <a {{action "showTeamTwo" team}}>{{team.name}}</a>
       </div>
     {{/each}}
   {{/if}}
@@ -17,7 +17,7 @@
 </div>
 
 {{#if teamTwoShow}}
-<div class="ui card center-el">
+<div class="ui card light-fade center-el">
   <div class="content">
     <div class="header">
       <img class="ui avatar square medium"{{bind-attr src=teamTwoShow.imgUrl}}/>
@@ -95,7 +95,7 @@
     <br>
 
     <div class="ui content divider"></div>
-    <h3>Defense</h3>
+    <h3 class="bball-navy">Defense</h3>
     <div class="ui tiny statistic">
       <div class="value float right">
         {{teamTwoShow.dPpgRank}}
@@ -166,11 +166,11 @@
     <br>
   </div>
 </div>
-<button class="ui button teal medium center-item" {{action 'findTeamTwoPlayers' teamTwoShow}}>See Players</button>
+<button class="ui button medium center-item" {{action 'findTeamTwoPlayers' teamTwoShow}}>See Players</button>
 {{/if}}
 
 {{#if teamTwoArray }}
-  <div class="ui card divided list center-el">
+  <div class="ui card divided light-fade list center-el">
     <div class="content">
       {{#each teamTwoArray}}
         <div class="item">
@@ -184,7 +184,7 @@
 
 {{#if teamTwoPlayerStats}}
 
-<div class="ui card center-el">
+<div class="ui card light-fade center-el">
   <div class="content center aligned">
     <h4 class="header">{{teamTwoPlayerStats.name}}</h4>
     <div class="ui content divider"></div>
