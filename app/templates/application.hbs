@@ -1,6 +1,8 @@
-<div class="ui inverted menu">
+<div class="ui menu">
   <a class="item" href="/teams">NCAA Matchup</a>
   {{#link-to 'teams.rank' class="item"}}Stat Rankings{{/link-to}}
+  {{#link-to 'bracket' class="item"}}Make a Bracket{{/link-to}}
 </div>
 
 {{outlet 'application'}}
+{{outlet 'bracket'}}
