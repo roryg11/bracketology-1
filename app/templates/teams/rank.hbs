@@ -1,5 +1,5 @@
 <div class="ui twelve column page grid">
-  <div class="ui vertical pointing menu four wide column floated left rankbar">
+  <div class="ui vertical light-fade pointing menu four wide column floated left rankbar">
       <a {{action "setRanking" 'o_ppg'}} class="item">Offensive Points</a>
       <a {{action "setRanking" 'o_rpg'}} class="item">Offensive Rebounds</a>
       <a {{action "setRanking" 'o_apg'}} class="item">Offensive Assists</a>
@@ -8,7 +8,7 @@
       <a {{action "setRanking" 'd_bpg'}} class="item">Blocks</a>
       <a {{action "setRanking" 'd_spg'}} class="teal item">Steals</a>
   </div>
-  <div class="ui segment eight wide column floated right">
+  <div class="ui segment light-fade eight wide column floated right">
     <ol class="ui selection list">
       {{#each team in statRanking}}
         <li class="item" {{action 'setTeamValues' team}}>
