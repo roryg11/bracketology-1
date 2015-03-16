@@ -4,12 +4,12 @@
 		<div class="round round-one current">
 			<div class="round-details">Round 1<br/><span class="date">March 16</span></div>
 			<ul class="matchup" data-match-number="1">
-				<li class="team team-top">Duke<span class="score">76</span></li>
-				<li class="team team-bottom">Virginia<span class="score">82</span></li>
+				<li class="team team-top" {{action "pickRoundTwoGameOneTeamOne" "Duke"}}>Duke<span class="score">76</span></li>
+				<li class="team team-bottom" {{action "pickRoundTwoGameOneTeamOne" "Virginia"}}>Virginia<span class="score">82</span></li>
 			</ul>
 			<ul class="matchup">
-				<li class="team team-top">Wake Forest<span class="score">64</span></li>
-				<li class="team team-bottom">Clemson<span class="score">56</span></li>
+				<li class="team team-top" {{action "pickRoundTwoGameOneTeamTwo" "Wake Forest"}}>Wake Forest<span class="score">64</span></li>
+				<li class="team team-bottom" {{action "pickRoundTwoGameOneTeamTwo" "Clemson"}}>Clemson<span class="score">56</span></li>
 			</ul>
 			<ul class="matchup">
 				<li class="team team-top">North Carolina<span class="score">68</span></li>
@@ -72,8 +72,8 @@
 		<div class="round round-two">
 			<div class="round-details">Round 2<br/><span class="date">March 18</span></div>
 			<ul class="matchup">
-				<li class="team team-top">&nbsp;<span class="score">&nbsp;</span></li>
-				<li class="team team-bottom">&nbsp;<span class="score">&nbsp;</span></li>
+				<li class="team team-top">{{roundTwoGameOneTeamOne}}<span class="score">&nbsp;</span></li>
+				<li class="team team-bottom">{{roundTwoGameOneTeamTwo}}<span class="score">&nbsp;</span></li>
 			</ul>
 			<ul class="matchup">
 				<li class="team team-top">&nbsp;<span class="score">&nbsp;</span></li>
@@ -303,11 +303,4 @@
 	</div>
 	</div>
 	</section>
-
-
-
-
-
-
-
 {{outlet}}
